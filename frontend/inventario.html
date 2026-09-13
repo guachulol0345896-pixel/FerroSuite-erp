@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventario — FerroSuite</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22 4a6 6 0 0 0-7.9 6.4L4 20.5V26h5.5l10.1-10.1A6 6 0 0 0 22 4Z" stroke="#F2994A" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="21.5" cy="8.5" r="1.6" fill="#F2994A"/>
+        </svg>
+        <span class="brand-name">FerroSuite<small>ERP para ferreterías pyme</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="inventario.html" aria-current="page">Inventario</a></li>
+          <li><a href="proveedores.html">Proveedores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="module-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> / Inventario</p>
+        <span class="tag-progress">MOD-01 · en desarrollo</span>
+        <h1>Inventario</h1>
+        <p class="lead">
+          Control del catálogo de productos, existencias por bodega y alertas de stock
+          mínimo, respetando las unidades de medida propias de una ferretería (metro,
+          kilogramo, unidad, varilla).
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Lo que tendrá esta pantalla</h2>
+          <p>Esta es la primera versión de la interfaz. La funcionalidad real (datos, cálculos y guardado) se construirá en las siguientes entregas del proyecto.</p>
+        </div>
+        <ul class="checklist">
+          <li><span class="mark">01</span> Listado del catálogo de productos con su unidad de medida.</li>
+          <li><span class="mark">02</span> Registro de entradas y salidas por bodega.</li>
+          <li><span class="mark">03</span> Alerta visual cuando un producto llega a su stock mínimo.</li>
+          <li><span class="mark">04</span> Indicador de riesgo de quiebre de stock por producto.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>FerroSuite — Proyecto de Arquitectura de Software, sexto semestre.</span>
+      <a href="https://github.com/guachulol0345896-pixel/FerroSuite-erp" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
