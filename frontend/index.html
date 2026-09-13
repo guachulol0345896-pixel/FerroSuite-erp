@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FerroSuite — ERP modular para ferreterías pyme</title>
+  <meta name="description" content="FerroSuite es un ERP modular en la nube para ferreterías pyme en Colombia, con Inventario y Proveedores como primeros módulos." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22 4a6 6 0 0 0-7.9 6.4L4 20.5V26h5.5l10.1-10.1A6 6 0 0 0 22 4Z" stroke="#F2994A" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="21.5" cy="8.5" r="1.6" fill="#F2994A"/>
+        </svg>
+        <span class="brand-name">FerroSuite<small>ERP para ferreterías pyme</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="proveedores.html">Proveedores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h1>El control de tu ferretería, en un solo lugar</h1>
+          <p class="lead">
+            FerroSuite es un ERP modular en la nube, pensado para ferreterías pyme en
+            Colombia. Empieza con lo que más te duele hoy —inventario y proveedores— y
+            crece con los demás módulos cuando tu negocio lo necesite.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="inventario.html">Ver módulo de Inventario</a>
+            <a class="btn btn-ghost" href="proveedores.html">Ver módulo de Proveedores</a>
+          </div>
+        </div>
+
+        <div class="rack" role="img" aria-label="Estantería con los cinco módulos de FerroSuite; Inventario y Proveedores están activos, los demás llegarán más adelante.">
+          <div class="rack-row">
+            <span class="rack-code">MOD-01</span>
+            <div class="rack-bin is-active">
+              <div class="bin-name">Inventario</div>
+              <div class="bin-state">En desarrollo</div>
+            </div>
+          </div>
+          <div class="rack-row">
+            <span class="rack-code">MOD-02</span>
+            <div class="rack-bin is-active">
+              <div class="bin-name">Proveedores</div>
+              <div class="bin-state">En desarrollo</div>
+            </div>
+          </div>
+          <div class="rack-row">
+            <span class="rack-code">MOD-03</span>
+            <div class="rack-bin is-pending">
+              <div class="bin-name">Contabilidad</div>
+              <div class="bin-state">Próximamente</div>
+            </div>
+          </div>
+          <div class="rack-row">
+            <span class="rack-code">MOD-04</span>
+            <div class="rack-bin is-pending">
+              <div class="bin-name">RRHH</div>
+              <div class="bin-state">Próximamente</div>
+            </div>
+          </div>
+          <div class="rack-row">
+            <span class="rack-code">MOD-05</span>
+            <div class="rack-bin is-pending">
+              <div class="bin-name">CRM / Clientes</div>
+              <div class="bin-state">Próximamente</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-band">
+      <div class="container">
+        <div class="stat-number">70%</div>
+        <p>
+          de las pymes en Colombia todavía lleva su inventario y sus proveedores en
+          Excel o en cuadernos. <strong>FerroSuite existe para cerrar esa brecha</strong>,
+          empezando por los dos procesos que más pérdidas generan cuando fallan.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Los cinco módulos del proyecto</h2>
+          <p>
+            Cada módulo se puede contratar por separado o combinado. Esta primera
+            versión de la interfaz se concentra en Inventario y Proveedores; los demás
+            se incorporarán en las siguientes entregas del proyecto.
+          </p>
+        </div>
+
+        <div class="module-grid">
+          <article class="module-card is-active">
+            <span class="code">MOD-01</span>
+            <h3>Inventario</h3>
+            <p>Catálogo con unidades mixtas, control de existencias por bodega y alertas de stock mínimo.</p>
+            <span class="status active">En desarrollo</span>
+          </article>
+
+          <article class="module-card is-active">
+            <span class="code">MOD-02</span>
+            <h3>Proveedores</h3>
+            <p>Ficha de proveedor, historial de cumplimiento y generación de órdenes de compra.</p>
+            <span class="status active">En desarrollo</span>
+          </article>
+
+          <article class="module-card">
+            <span class="code">MOD-03</span>
+            <h3>Contabilidad</h3>
+            <p>Facturación electrónica DIAN y estados financieros básicos.</p>
+            <span class="status pending">Próximamente</span>
+          </article>
+
+          <article class="module-card">
+            <span class="code">MOD-04</span>
+            <h3>RRHH</h3>
+            <p>Nómina electrónica, turnos de mostrador y control de ausentismo.</p>
+            <span class="status pending">Próximamente</span>
+          </article>
+
+          <article class="module-card is-wide">
+            <span class="code">MOD-05</span>
+            <h3>CRM / Clientes</h3>
+            <p>Ficha de clientes recurrentes y fidelización por volumen de compra.</p>
+            <span class="status pending">Próximamente</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>FerroSuite — Proyecto de Arquitectura de Software, sexto semestre.</span>
+      <a href="https://github.com/guachulol0345896-pixel/FerroSuite-erp" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
