@@ -34,12 +34,11 @@
     <section class="module-hero">
       <div class="container">
         <p class="breadcrumb"><a href="index.html">Inicio</a> / Inventario</p>
-        <span class="tag-progress">MOD-01 · en desarrollo</span>
+        <span class="tag-progress">MOD-01 · prototipo</span>
         <h1>Inventario</h1>
         <p class="lead">
-          Control del catálogo de productos, existencias por bodega y alertas de stock
-          mínimo, respetando las unidades de medida propias de una ferretería (metro,
-          kilogramo, unidad, varilla).
+          Catálogo de productos con su unidad de medida y su nivel de stock. Los datos
+          que se ven aquí son de prueba, todavía no vienen de una base de datos.
         </p>
       </div>
     </section>
@@ -47,15 +46,55 @@
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Lo que tendrá esta pantalla</h2>
-          <p>Esta es la primera versión de la interfaz. La funcionalidad real (datos, cálculos y guardado) se construirá en las siguientes entregas del proyecto.</p>
+          <h2>Catálogo de productos</h2>
         </div>
-        <ul class="checklist">
-          <li><span class="mark">01</span> Listado del catálogo de productos con su unidad de medida.</li>
-          <li><span class="mark">02</span> Registro de entradas y salidas por bodega.</li>
-          <li><span class="mark">03</span> Alerta visual cuando un producto llega a su stock mínimo.</li>
-          <li><span class="mark">04</span> Indicador de riesgo de quiebre de stock por producto.</li>
-        </ul>
+
+        <div class="table-wrap">
+          <table id="tabla-productos" class="data-table">
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th>Nombre</th>
+                <th>Unidad</th>
+                <th>Stock actual</th>
+                <th>Stock mínimo</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- se llena con js/controllers/inventario.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-head" style="margin-top:40px;">
+          <h2>Agregar producto</h2>
+          <p>Formulario de prueba: agrega una fila a la tabla de arriba, no guarda datos todavía.</p>
+        </div>
+
+        <form id="form-producto" class="form-grid">
+          <label>SKU
+            <input type="text" name="sku" placeholder="FER-0001" />
+          </label>
+          <label>Nombre
+            <input type="text" name="nombre" required />
+          </label>
+          <label>Unidad de medida
+            <select name="unidad">
+              <option>Unidad</option>
+              <option>Metro</option>
+              <option>Kilogramo</option>
+              <option>Varilla</option>
+            </select>
+          </label>
+          <label>Stock actual
+            <input type="number" name="stockActual" min="0" required />
+          </label>
+          <label>Stock mínimo
+            <input type="number" name="stockMinimo" min="0" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Agregar producto</button>
+        </form>
       </div>
     </section>
   </main>
@@ -68,5 +107,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/models/data.js"></script>
+  <script src="js/controllers/inventario.js"></script>
 </body>
 </html>

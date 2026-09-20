@@ -436,3 +436,70 @@ img, svg { max-width: 100%; display: block; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ---------------- Fase 2: tabla de datos y formulario (nuevo, mínimo) ---------------- */
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--gray-light);
+  border-radius: 4px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--panel);
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--gray-light);
+  white-space: nowrap;
+}
+
+.data-table thead th {
+  background: var(--steel);
+  color: #fff;
+  font-weight: 700;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--gray-light);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.form-grid input,
+.form-grid select {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--gray-light);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.form-grid .btn {
+  align-self: end;
+  cursor: pointer;
+}
